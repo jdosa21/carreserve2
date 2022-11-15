@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+
+/* tiny scroll */
+.wrap_scroll {position:relative}
+.wrap_scroll .viewport {overflow:hidden;position:relative;z-index:1;width:100%;height:100%}
+.wrap_scroll .overview {position:absolute;top:0;left:0;margin:0;padding:0;width:100%;list-style:none}
+.wrap_scroll .scrollbar {position:absolute;top:0;right:0;z-index:2;width:6px;transition:opacity 0.5s linear}
+.wrap_scroll .track {position:relative;width:100%;height:100%;background:#fcfcfc}
+.wrap_scroll .thumb {overflow:hidden;position:absolute;top:0;left:0;width:6px;height:20px;background:#f2f2f3;cursor:pointer}
+.wrap_scroll .end {overflow:hidden;width:100%;height:5px;background:#f2f2f3}
+.wrap_scroll .disable {display:none}
+
+/* 메인검색패널 */
+.recruit_search_panel {position:relative;z-index:100;margin-bottom:50px} /* WMG-22073 */
+.wrap_main_panel .default_option:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_main_panel .default_option .search_option {float:left;position:relative}
+.wrap_main_panel .default_option .btn_open_layer {position:relative;margin-bottom:5px;padding:0 20px 0 4px;height:24px;color:#222;font-size:14px;letter-spacing:-1px;line-height:22px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 64px -250px}
+.wrap_main_panel .default_option .btn_open_layer:after {display:block;position:absolute;top:11px;right:3px;width:9px;height:5px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/arr_search_panel.png) no-repeat -34px 0;content:""}
+.wrap_main_panel .default_option .search_option.open .btn_open_layer {color:#5b72ec;font-weight:bold}
+.wrap_main_panel .default_option .search_option.open .btn_open_layer:after {background-position:-34px 100%}
+.wrap_main_panel .default_option .layer_option {top:29px;width:361px}
+.wrap_main_panel .default_option .layer_option .btn_reset {float:left;position:relative;padding-right:31px}
+.wrap_main_panel .default_option .layer_option .btn_reset:after {display:block;position:absolute;top:10px;right:15px;width:11px;height:10px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 -106px;content:""}
+.wrap_main_panel .default_option .layer_option .area_check:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_main_panel .default_option .layer_option .area_check .experience {margin-left:16px}
+.wrap_main_panel .default_option .layer_option .area_check .right {float:right}
+.wrap_main_panel .default_option .layer_option .btns {width:301px}
+.wrap_main_panel .default_option .layer_option .btns:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_main_panel .default_option .layer_option .btns li {float:left;margin:-1px 0 0 -1px;border:1px solid #dbdbdb}
+.wrap_main_panel .default_option .layer_option .btns li .btn_check.mark>input[type="checkbox"]+label {color:#fff;background:#555}
+.wrap_main_panel .default_option .career_option .area_check {padding:11px 0 5px;text-align:left}
+.wrap_main_panel .default_option .career_option .btn_check input[type="checkbox"]+label {width:59px;height:38px;line-height:38px}
+.wrap_main_panel .default_option .career_option .btns .blank {width:59px;height:38px}
+.wrap_main_panel .default_option .career_option .area_btn {width:301px}
+.wrap_main_panel .default_option .edu_option {margin-left:12px}
+.wrap_main_panel .default_option .edu_option .layer_option {width:421px}
+.wrap_main_panel .default_option .edu_option .area_check {margin-top:-12px;padding-bottom:9px}
+.wrap_main_panel .default_option .edu_option .btns {width:361px}
+.wrap_main_panel .default_option .edu_option .btns li {width:89px}
+.wrap_main_panel .default_option .edu_option .btn_check input[type="checkbox"]+label {padding-top:10px;width:89px;height:54px;line-height:16px}
+.wrap_main_panel .default_option .edu_option .btns .blank {width:89px;height:54px}
+.wrap_main_panel .default_option .edu_option .area_btn {width:361px}
+/*.wrap_main_panel .default_option .recently_search_option {float:right}
+.wrap_main_panel .default_option .recently_search_option .btn_open_layer {padding-right:12px;color:#999;font-size:12px}
+.wrap_main_panel .default_option .recently_search_option .btn_open_layer:after {right:0;background-position:0 0}
+.wrap_main_panel .default_option .recently_search_option .layer_option {right:0;left:auto;padding:24px 29px 29px;width:418px}
+.wrap_main_panel .default_option .recently_search_option .open .btn_open_layer:after {background-position:0 50%}
+.wrap_main_panel .default_option .recently_search_option .search_recently {display:inline-block;position:relative;padding-right:18px;color:#333;font-size:14px;letter-spacing:-1px;line-height:20px;text-align:left}
+.wrap_main_panel .default_option .recently_search_option .search_recently:after {display:block;position:absolute;top:6px;right:2px;width:6px;height:11px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 -26px;content:""}
+.wrap_main_panel .default_option .recently_search_option .box_list {margin-top:12px;padding:14px 0;border:1px solid #e0e0e0;border-width:1px 0;color:#666;font-size:13px;letter-spacing:-1px;line-height:22px}
+.wrap_main_panel .default_option .recently_search_option .list_option {overflow-y:auto;max-height:200px}
+.wrap_main_panel .default_option .recently_search_option .list_option .bar {color:#999}*/
+
+.wrap_main_panel .main_option {position:relative;z-index:5}
+.wrap_main_panel .tab_section:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_main_panel .tab_section li {float:left;position:relative;z-index:0;margin-left:-1px;border:1px solid #ddd}
+.wrap_main_panel .tab_section li:first-child {margin-left:0}
+.wrap_main_panel .tab_section button {position:relative;padding:0 15px 0 45px;width:419px;height:48px;color:#666;font-size:15px;letter-spacing:-1px;text-align:left}
+.wrap_main_panel .tab_section button:before {display:block;position:absolute;top:15px;left:15px;width:20px;height:18px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/ico_main_search_panel.png) no-repeat 0 0;content:""}
+.wrap_main_panel .tab_section button:after {display:block;position:absolute;top:21px;right:15px;width:11px;height:6px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/arr_search_panel.png) no-repeat 100% 0;content:""}
+
+.wrap_main_panel .tab_section button.btn_keyword {width:348px}
+.wrap_main_panel .tab_section button.btn_detail_option {padding:17px 0 0;width:59px;font-size:12px;line-height:20px;text-align:center}
+.wrap_main_panel .tab_section button.btn_area:before {width:16px;height:20px;background-position:0 -33px}
+.wrap_main_panel .tab_section button.btn_subway:before {width:16px;height:21px;background-position:0 -102px}
+.wrap_main_panel .tab_section button.btn_keyword:before {width:18px;height:19px;background-position:0 -69px}
+.wrap_main_panel .tab_section button.btn_detail_option:before {top:10px;left:24px;width:11px;height:11px;background-position:0 -147px}
+.wrap_main_panel .tab_section button.btn_keyword:after,
+.wrap_main_panel .tab_section button.btn_detail_option:after {display:none}
+.wrap_main_panel .tab_section button span {display:inline-block;overflow:hidden;margin-top:2px;padding-right:1px;max-width:91%;line-height:20px;text-overflow:ellipsis;vertical-align:-1px;white-space:nowrap}
+.wrap_main_panel .tab_section li.on {z-index:1;border-color:#444}
+.wrap_main_panel .tab_section li.on button {color:#222;font-weight:bold}
+.wrap_main_panel .tab_section li.on button:before {background-position-x:100%}
+.wrap_main_panel .tab_section li.on button:after {background-position:100% 100%}
+/* WMG-20866 */
+.wrap_main_panel .tab_section .filter_selected {color:#4876ef}
+.wrap_main_panel .tab_section li.on .filter_selected {color:#222}
+
+.wrap_section_contents {position:relative;top:-1px;z-index:1}
+.wrap_section_contents .option_content {display:none;border:1px solid #444;box-sizing:border-box}
+.wrap_section_contents .option_content.on {display:block}
+.wrap_section_contents .option_content.subway_station_section {display:block;border:0}
+.wrap_section_contents .select_keyword {height:65px;border-bottom:1px solid #e5e5e5;box-sizing:border-box}
+.wrap_section_contents .select_keyword {padding:12px 0 0 15px}
+.wrap_section_contents .select_keyword:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_section_contents .select_keyword .wrap_auto_keyword {float:left;position:relative}
+.wrap_section_contents .select_keyword .ipt_keyword {display:block;position:relative;width:464px;height:40px;border:1px solid #dbdbdb;box-sizing:border-box}
+.wrap_section_contents .select_keyword .ipt_keyword:before {display:block;position:absolute;top:14px;left:15px;width:13px;height:13px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 -133px;content:""}
+.wrap_section_contents .select_keyword .ipt_keyword input {padding:0 40px 0 34px;width:462px;height:38px;border:0;box-sizing:border-box;color:#222;font-size:13px;line-height:38px;background:transparent}
+.wrap_section_contents .select_keyword .ipt_keyword input[type="text"]::placeholder {color:#949494;font-size:13px;letter-spacing:-1px;opacity:1}
+.wrap_section_contents .select_keyword .ipt_keyword input[type="text"]:-ms-input-placeholder {color:#949494;font-size:13px;letter-spacing:-1px}
+.wrap_section_contents .select_keyword .ipt_keyword .btn_delete {display:none;overflow:hidden;position:absolute;top:13px;right:15px;width:15px;height:15px;color:rgba(0,0,0,0);font-size:1px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 -160px}
+.wrap_section_contents .select_keyword .wrap_result {display:none;position:absolute;top:39px;left:0;z-index:10;width:464px;border:1px solid #dbdbdb;box-sizing:border-box;background:#fff}
+.wrap_section_contents .select_keyword .wrap_result.has_result .viewport {height:183px}
+.wrap_section_contents .select_keyword .list_keyword {padding:9px 0 10px}
+.wrap_section_contents .select_keyword .list_keyword label {color:#222;font-size:13px;letter-spacing:-1px;cursor:pointer}
+.wrap_section_contents .select_keyword .list_keyword label em {color:#5b72ec;font-weight:bold}
+.wrap_section_contents .select_keyword .list_keyword li {padding:0 14px;width:100%;height:32px;box-sizing:border-box;line-height:32px}
+.wrap_section_contents .select_keyword .list_keyword li:hover,
+.wrap_section_contents .select_keyword .list_keyword li.current {background:#f8faff}
+.wrap_section_contents .select_keyword .list_keyword li .sri_input3 {width:100%;vertical-align:baseline}
+.wrap_section_contents .select_keyword .wrap_result.no_result p {padding-top:85px;height:183px;box-sizing:border-box;color:#999;font-size:13px;letter-spacing:-1px;text-align:center;vertical-align:middle}
+.wrap_section_contents .select_keyword .area_btn {position:relative;padding:0 15px;height:39px;line-height:39px;background:#fcfcfc}
+.wrap_section_contents .select_keyword .area_btn .btn_close {position:absolute;top:10px;right:17px;color:#888;font-size:13px;line-height:18px}
+.wrap_section_contents .select_keyword .area_btn .btn_close:after {display:inline-block;margin-left:5px;width:9px;height:9px;vertical-align:-1px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 -191px;content:""}
+.wrap_section_contents .select_keyword .recently_keyword {float:left;padding-left:17px;color:#949494;font-size:13px;line-height:40px}
+.wrap_section_contents .select_keyword .recently_keyword .tit {padding-right:3px;font-weight:normal;letter-spacing:-1px}
+.wrap_section_contents .select_keyword .recently_keyword .btn_keyword {margin-right:5px;padding:0 3px;color:#444;letter-spacing:-1px}
+
+/* depth category */
+.wrap_main_panel .area_section .wrap_depth_category,
+.wrap_main_panel .subway_section .wrap_depth_category,
+.wrap_main_panel .industry_section .wrap_depth_category {border-top:1px solid #e5e5e5}
+.wrap_main_panel .wrap_depth_category {height:245px}
+.wrap_main_panel .wrap_depth_category:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_depth_category .wrap_scroll {float:left;box-sizing:border-box}
+.wrap_depth_category .wrap_scroll {height:245px}
+.wrap_depth_category .wrap_scroll.depth1 {width:208px}
+.wrap_depth_category .wrap_scroll.depth2 {width:249px;border-left:1px solid #e5e5e5}
+.wrap_depth_category .wrap_scroll.depth_check {width:801px;border-left:1px solid #e5e5e5;background:#fff}
+.wrap_depth_category .wrap_scroll.depth_check li {float:left;padding-left:15px;width:200px;box-sizing:border-box}
+.wrap_depth_category .wrap_scroll .overview {padding:10px 0}
+.wrap_depth_category .wrap_scroll li button {position:relative;padding-left:14px;width:100%;height:30px;color:#222;font-size:13px;letter-spacing:-1px;line-height:30px;text-align:left}
+.wrap_depth_category .wrap_scroll li .count {color:#888}
+.wrap_depth_category .wrap_scroll li.on {background:#f7f9ff}
+.wrap_depth_category .wrap_scroll li.on button {position:relative;background:#f7f9ff}
+.wrap_depth_category .wrap_scroll li.on button:after {display:block;position:absolute;top:11px;right:16px;width:6px;height:11px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 0;content:""}
+.wrap_depth_category .wrap_scroll li.on button .txt,
+.wrap_depth_category .wrap_scroll li.selected button .txt {color:#566feb;font-weight:bold}
+.wrap_depth_category .wrap_scroll.depth1 li,
+.wrap_depth_category .wrap_scroll.depth2 li {padding:1px;box-sizing:border-box}
+.wrap_depth_category .wrap_scroll.depth_check .overview {padding:0}
+.wrap_depth_category .wrap_scroll .wrap_list_check {background:#fff}
+.wrap_depth_category .wrap_scroll.depth_check .list_check {position:relative;padding-top:47px}
+.wrap_depth_category .list_check:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_depth_category .list_check li {height:32px;line-height:32px}
+.wrap_depth_category .list_check .inpChk {display:block}
+.wrap_depth_category .list_check label {overflow:hidden;max-width:98%;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+.wrap_depth_category .list_check li:first-child label {font-weight:bold}
+.wrap_depth_category .wrap_scroll.depth_check .noti_txt {padding:20px 0 0 15px;width:100%;height:245px;box-sizing:border-box;color:#222;font-size:13px;letter-spacing:-1px;background:#f9f9f9}
+.wrap_depth_category .area_btn {position:absolute;top:7px;right:14px}
+.wrap_depth_category .area_btn button {position:relative;padding-right:14px;height:18px;color:#949494;font-size:12px;letter-spacing:-1px;line-height:18px}
+.wrap_depth_category .area_btn .btn_all_category:after {display:block;position:absolute;top:8px;right:3px;width:7px;height:4px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/arr_search_panel.png) no-repeat 0 0;content:""}
+.wrap_depth_category .area_btn .btn_all_category.on:after {background-position:0 100%}
+.wrap_depth_category .area_btn .btn_reset {padding-right:18px}
+.wrap_depth_category .area_btn .btn_reset:after {display:block;position:absolute;top:6px;right:2px;width:11px;height:10px;background:url(//www.saraminimage.co.kr/sri/person/search_panel/spr_search_panel.png) no-repeat 0 -51px;content:""}
+.wrap_depth_category .area_btn .btn_reset.on:after {background-position:0 100%}
+/* 카테고리 펼쳐보기 */
+.wrap_depth_category.expand {height:auto}
+/* 지역 */
+.wrap_depth_category .wrap_scroll.depth1 {width:318px}
+.wrap_depth_category .wrap_scroll.depth1 ul:after {display:table;clear:both;content:"";table-layout:fixed}
+.wrap_depth_category .wrap_scroll.depth1 ul.list_overseas {margin-top:10px;padding-top:10px;border-top:1px solid #e5e5e5}
+.wrap_depth_category .wrap_scroll.depth1 .overview li {float:left;width:50%}
+.wrap_depth_category .wrap_scroll.depth1 .overview.overseas {position:relative;padding-top:223px}
+.wrap_depth_category .wrap_scroll.depth1 .overview.overseas .list_overseas {position:absolute;top:10px;left:0;margin-top:0;margin-bottom:10px;padding-top:0;padding-bottom:10px;border-top:none;border-bottom:1px solid #e5e5e5}
+.btn_search.active {float: right; height: 70px; width: 160px; border-color:#222;color:#fff;background:#222;box-shadow:0 4px 10px rgba(0,0,0,0.36)}
+
+/* 지하철 */
+.option_content.subway_section .wrap_depth_category .wrap_scroll.depth2 {width:159px}
+.option_content.area_section .wrap_depth_category .wrap_scroll.depth_check {width:940px}
+.option_content.subway_section .wrap_depth_category .wrap_scroll.depth_check {width:890px}
+.option_content.area_section .wrap_depth_category .wrap_scroll.depth_check li,
+.option_content.subway_section .wrap_depth_category .wrap_scroll.depth_check li {width:33.33%}
+.option_content.subway_section .wrap_depth_category .list_check li:first-child label {font-weight:normal}
+
+
+
+
+

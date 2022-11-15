@@ -1,0 +1,1746 @@
+@charset "utf-8";
+
+/* 이전 style 수정 */
+
+#content {
+    height: 100% !important;
+}
+
+#content #container {
+    margin-left: 0%;
+    margin-top: 0;
+}
+
+/* *********************************************************************************************************************************************************************************************
+														[ 2022 SK렌터카 PC 리뉴얼 ]
+********************************************************************************************************************************************************************************************* */
+
+/* reset */
+html {
+    overflow: visible;
+}
+
+.goView {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.blind {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+/* 아이콘 */
+.icon_sel_arrow {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background: url('/resources/images/icon_arrow_24x24.png') no-repeat;
+    background-size: 24px;
+}
+
+.iconCare {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background: url('/resources/images/icon_care_56x56.png') no-repeat;
+    background-size: 56px;
+}
+
+.iconLink {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background: url('../images/icon_link_56x56.png') no-repeat;
+    background-size: 56px;
+}
+
+.iconLive {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background: url('../images/icon_live_56x56.png') no-repeat;
+    background-size: 56px;
+}
+
+.iconBill {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background: url('../images/icon_bill_56x56.png') no-repeat;
+    background-size: 56px;
+}
+
+.icon_chat {
+    display: block;
+    height: 48px;
+    width: 48px;
+    background: url('../images/icon_talk_48x48.png') no-repeat;
+    background-size: 48px;
+}
+
+.iconArrow {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background: url('../images/icon_arrow.png') no-repeat;
+    background-size: 24px;
+}
+
+/* 버튼 */
+.btnWrap {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.btnWrap .btnRes {
+    display: inline-block;
+    margin-left: 24px;
+    flex: 1;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    background: #5959db;
+    border-radius: 4px;
+    height: 56px;
+    line-height: 56px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btnWrap .btnConfirm {
+    display: inline-block;
+    padding: 0 16px;
+    font-weight: bold;
+    color: #666;
+    text-decoration: underline;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* setting */
+#content {
+    background-color: #ffffff;
+}
+
+.formChk,
+.formRdo {
+    display: inline-block;
+    position: relative;
+    height: 18px;
+}
+
+.formChk input {
+    border: none;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    position: absolute;
+    ;
+    left: -10px;
+    top: -10px;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+}
+
+.formRdo input {
+    border: none;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+}
+
+/* 메인콘텐츠 상단 */
+.contentWrap .cont {
+    width: 500px;
+    height: 572px;
+}
+
+
+.mainCotn.rentCmplt .mainTxt {
+    background: none;
+    padding-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+.mainTxtWrap {
+    padding: 14px 0 234px 0;
+    position: relative;
+}
+
+.mainTxtWrap:after {
+    display: block;
+    content: '';
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mainTxtWrap .txt01 {
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.mainTxtWrap .txt02 {
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.mainTxtWrap .txt02 strong,
+.mainTxtWrap .txt02 strong span {
+    font-weight: bold;
+}
+
+.mainTxtWrap.login .txt02 strong,
+.mainTxtWrap.cmplt .txt02 strong {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 285px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mainTxtWrap.jejuOn:after {
+    background: url(../images/main_jeju.png) no-repeat center;
+    background-size: 400px 300px;
+}
+
+.mainTxtWrap.jejuOn.login:after {
+    background: url(../images/main_jeju_login.png) no-repeat center;
+    background-size: 400px 300px;
+}
+
+.mainTxtWrap.jejuOn.cmplt:after {
+    background: url(../images/main_jeju_cmplt.png) no-repeat center;
+    background-size: 400px 300px;
+}
+
+.mainTxtWrap.inlandOn:after {
+    background: url(../images/main_inland.png) no-repeat center;
+    background-size: 400px 300px;
+}
+
+.mainTxtWrap.inlandOn.login:after {
+    background: url(../images/main_inland_login.png) no-repeat center;
+    background-size: 400px 300px;
+    right: -32px;
+}
+
+.mainTxtWrap.inlandOn.cmplt:after {
+    background: url(../images/main_inland_cmplt.png) no-repeat center;
+    background-size: 400px 300px;
+}
+
+/* 예약내역확인 슬라이드 */
+.durDateWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.durDateWrap .durDate {
+    width: 43%;
+    position: relative;
+}
+
+.durDateWrap .durDate:after {
+    display: block;
+    content: '';
+    height: 13px;
+    width: 4px;
+    position: absolute;
+    left: 23%;
+    top: -3px;
+    background-color: #b4b4b4;
+    border-radius: 8px;
+}
+
+.durDateWrap .durDate:before {
+    display: block;
+    content: '';
+    height: 13px;
+    width: 4px;
+    position: absolute;
+    right: 23%;
+    top: -3px;
+    background-color: #b4b4b4;
+    border-radius: 8px;
+}
+
+.durDateWrap .durDate .cntTop {
+    background-color: #eee;
+    border-radius: 12px 12px 0 0;
+    padding: 8px;
+}
+
+.durDateWrap .durDate .cntTop p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.durDateWrap .durDate .cntBtm {
+    padding: 24px 0 32px;
+    background-color: #F9F9F9;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    overflow: hidden;
+    height: 50px;
+}
+
+.durDateWrap .durDate .cntBtm .date {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: -0.004em;
+    color: #444;
+}
+
+.durDateWrap .durDate .cntBtm .date:after {
+    display: none;
+}
+
+.durDateWrap .durDate .cntBtm .time {
+    font-size: 18px;
+}
+
+.reseSwiper {
+    padding-top: 32px;
+    position: relative;
+}
+
+.reseSwiper .pageNum {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+}
+
+.reseSwiper .pageNum .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background-color: #ddd;
+    opacity: 1;
+}
+
+.reseSwiper .pageNum .swiper-pagination-bullet+.swiper-pagination-bullet {
+    margin-left: 4px;
+}
+
+.reseSwiper .pageNum .swiper-pagination-bullet-active {
+    width: 8px;
+    border-radius: 10px;
+    background-color: #666;
+}
+
+.reseSlide .dlwrap {
+    margin: 32px 8px 24px;
+}
+
+.dlwrap .dltbl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dlwrap .dltbl+.dltbl {
+    padding-top: 10px;
+}
+
+.dlwrap .dltbl dt {
+    color: #999;
+    line-height: 18px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.dlwrap .dltbl dd {
+    flex: 1;
+    text-align: right;
+}
+
+.dlwrap .dltbl dd span {
+    color: #444;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+/* 이벤트베너 */
+.evtSwiper {
+    position: relative;
+}
+
+.evt_bnr {
+    border-radius: 10px;
+}
+
+.evtSwiper .pageNum {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    left: 24px;
+    bottom: 24px;
+    width: auto;
+    padding: 0 24px;
+    line-height: 24px;
+}
+
+.evtSwiper .pageNum span {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.002em;
+}
+
+.evtBtn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 24px;
+    z-index: 11;
+}
+
+.evtBtn.evtPrev,
+.evtBtn.evtPrev1 {
+    left: 24px;
+    background: url(../images/icon_bnr_left_24x24.png) no-repeat;
+    background-size: 24px;
+}
+
+.evtBtn.evtNext,
+.evtBtn.evtNext1 {
+    left: 74px;
+    background: url(../images/icon_bnr_right_24x24.png) no-repeat;
+    background-size: 24px;
+}
+
+.evtSwiper .evtSlide {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    height: 176px;
+    box-sizing: border-box;
+    padding: 28px 0 28px 24px;
+}
+
+.evtSwiper .evtSlide {
+    background-color: #8A847F;
+}
+
+.evtSwiper .evtSlide.evt02 {
+    background: #8EA9D1;
+}
+
+.evtSwiper .evtSlide.evt03 {
+    background: #86AC82;
+}
+
+.evtSwiper .evtSlide.evt04 {
+    background: #8A847F;
+}
+
+/* .evtSwiper .inland_bnr .evtSlide {background-color:#86AC82;} */
+.evtSwiper .evtSlide .evtTxtArea {
+    flex: 1;
+}
+
+.evtSwiper .evtSlide .bnrTxtArea {
+    max-width: 240px;
+    min-width: 240px;
+}
+
+.evtSwiper .evtSlide .txt01 {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.evtSwiper .evtSlide .txt02 {
+    width: 100%;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 52px;
+}
+
+.evtSwiper .evtSlide .img {
+    margin-left: 16px;
+    width: 200px;
+    height: 120px;
+}
+
+.evtSwiper .evtSlide img {
+    /*width:100%;height:100%;*/
+    object-fit: cover;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .evtSwiper .evtSlide .img {
+        margin-left: 16px;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+/* 메인탭 */
+.mainCotnWrap {
+    position: relative;
+}
+
+.mainTab {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.mainTab .tabWrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.mainTab .goView {
+    z-index: 5;
+}
+
+.mainTab .tabInland {
+    right: 0;
+}
+
+.jejuOn .mainTab .tabJeju {
+    left: 0;
+    z-index: 3;
+}
+
+.inlandOn .mainTab .tabInland {
+    z-index: 3;
+}
+
+.jejuOn .mainTab .tabJeju:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 70px;
+    background: url(../images/jeju_tab_on_01.png) no-repeat;
+    background-size: 40px 74px;
+}
+
+.jejuOn .mainTab .tabJeju:before {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 60px;
+    height: 70px;
+    background: url(../images/jeju_tab_on_02.png) no-repeat right 100% top 0;
+    background-size: 282px 74px;
+}
+
+.jejuOn .mainTab .tabInland:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 41px;
+    height: 70px;
+    background: url(../images/inland_tab_01.png) no-repeat;
+    background-size: 40px 74px;
+}
+
+.jejuOn .mainTab .tabInland:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -70px;
+    top: 0;
+    width: 111px;
+    height: 70px;
+    background: url(../images/inland_tab_02.png) no-repeat left 100% top 0;
+    background-size: 282px 74px;
+}
+
+.inlandOn .mainTab .tabJeju:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: 40px;
+    height: 70px;
+    background: url(../images/jeju_tab_01.png) no-repeat;
+    background-size: 40px 74px;
+}
+
+.inlandOn .mainTab .tabJeju:before {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -70px;
+    top: 0;
+    width: 111px;
+    height: 70px;
+    background: url(../images/jeju_tab_02.png) no-repeat;
+    background-size: 282px 74px;
+}
+
+.inlandOn .mainTab .tabInland:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 70px;
+    background: url(../images/inland_tab_on_01.png) no-repeat;
+    background-size: 40px 74px;
+}
+
+.inlandOn .mainTab .tabInland:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 60px;
+    height: 70px;
+    background: url(../images/inland_tab_on_02.png) no-repeat left 100% top 0;
+    background-size: 282px 74px;
+}
+.mainTab p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    color: #5959db;
+    z-index: 1;
+}
+
+.mainTab span {
+    display: flex;
+    align-items: center;
+    
+    
+    font-size: 20px;
+    font-weight: bold;
+    height: 49px;
+    line-height: 49px;
+    color: #5959db;
+    z-index: 1;
+}
+
+
+
+.mainTab p:after {
+    display: block;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.jejuOn .mainTab .tabJeju p:after {
+    background-color: #fff;
+    left: 40px;
+    width: calc(100% - 80px);
+}
+.jejuOn .mainTab .tabInland p:after {
+    background-color: #6C6259;
+    right: 40px;
+    width: calc(100% - 80px)
+}
+
+.inlandOn .mainTab .tabJeju p:after {
+    background-color: #8F7761;
+    right: 40px;
+    width: calc(100% - 80px);
+}
+
+.inlandOn .mainTab .tabInland p:after {
+    background-color: #fff;
+    left: 40px;
+    width: calc(100% - 80px);
+}
+
+.jejuOn .mainTab .tabInland p,
+.inlandOn .mainTab .tabJeju p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mainTab p .count {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    border-radius: 12px;
+    background-color: #666;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.jejuOn .mainTab .tabInland p .count {
+    background-color: #fff;
+    color: #6c6259;
+}
+
+.inlandOn .mainTab .tabJeju p .count {
+    background-color: #fff;
+    color: #8F7761;
+}
+
+
+/* 예약 */
+.mainCotn {
+    position: relative;
+    padding: 24px 32px 32px;
+    background-color: #fff;
+    border-radius: 14px 14px 10px 10px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 4%);
+}
+
+.rentSelect .selectCont {
+    position: relative;
+}
+
+.rentSelect .selectCont+.selectCont {
+    margin-top: 27px;
+}
+
+.rentSelect .selectCont .selTit {
+    position: relative;
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: -0.004em;
+}
+
+.rentSelect .selectCont.periodWrap .selTit {
+    background: url(../images/icon_date_30x30.png) no-repeat left center;
+    background-size: 30px;
+}
+
+.rentSelect .selectCont.storeWrap .selTit {
+    background: url(../images/icon_map_30x30.png) no-repeat left center;
+    background-size: 30px;
+}
+
+.rentSelect .selectCont.carWrap .selTit {
+    background: url(../images/icon_car_30x30.png) no-repeat left center;
+    background-size: 30px;
+}
+
+.rentSelectBox {
+    position: relative;
+    margin-top: 18px;
+    padding: 15px 56px 15px 16px;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.rentSelectBox+.rentSelectBox {
+    margin-top: 8px;
+}
+
+.rentSelectBox .rentBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rentSelectBox .rentBox .tit {
+    color: #222;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.004em;
+}
+
+.rentSelectBox .rentBox .tit .selectTxt {
+    position: relative;
+    display: inline-block;
+    margin-left: 17px;
+}
+
+.rentSelectBox .rentBox .tit .selectTxt:After {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+    position: absolute;
+    left: -11px;
+    top: 3px;
+}
+
+.rentSelectBox .rentBox .selArea {
+    display: flex;
+    height: 16px;
+}
+
+.rentSelectBox .rentBox .selArea .txt {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: -0.004em;
+}
+
+.rentSelectBox .rentBox .selArea .txt+.txt {
+    position: relative;
+    padding-left: 17px;
+    width: 54px;
+    box-sizing: border-box;
+}
+
+.rentSelectBox .rentBox .selArea .txt+.txt::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 11px;
+    background-color: #ccc;
+    position: absolute;
+    left: 8px;
+    top: 3px;
+}
+
+.rentSelectBox .rentBox .selArea.periodNone .txt+.txt::after {
+    display: none
+}
+
+.rentSelectBox .icon_sel_arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: right 16px center;
+}
+
+/* 제주지점 탭 비활성화 */
+.storeWrap.btmInert .rentSelectBox {
+    border: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+}
+
+.storeWrap.btmInert .rentBox .tit {
+    color: #aaa;
+}
+
+.storeWrap.btmInert .rentSelectBox .icon_sel_arrow {
+    display: none;
+}
+
+/* 링크베너 */
+.dirBnrWrap {
+    margin-top: 48px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dirBnrWrap .bnrCotn {
+    position: relative;
+    flex: 1;
+    padding: 32px 16px 24px 24px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.04);
+    height: 198px;
+    box-sizing: border-box;
+    ;
+}
+
+.dirBnrWrap .bnrCotn+.bnrCotn {
+    margin-left: 16px;
+}
+
+.dirBnrWrap .bnrCotn.longRent01 {
+    background: #D2DCF9 url(../images/icon_link_01_64x64.png) no-repeat right 16px bottom 16px;
+    background-size: 64px;
+}
+
+.dirBnrWrap .bnrCotn.longRent02 {
+    background: #D2E4E0 url(../images/icon_link_02_64x64.png) no-repeat right 16px bottom 16px;
+    background-size: 64px;
+}
+
+.dirBnrWrap .bnrCotn.tagoPay {
+    background: #F5DCC5 url(../images/icon_link_03_64x64.png) no-repeat right 16px bottom 16px;
+    background-size: 64px;
+}
+
+.dirBnrWrap .bnrCotn.csCotn {
+    background: #D0DFF1 url(../images/icon_link_04_64x64.png) no-repeat right 16px bottom 16px;
+    background-size: 64px;
+}
+
+.bnrCotn .linkTit {
+    color: #222;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.bnrCotn .linkTxt {
+    margin-top: 10px;
+    color: #444;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.bnrCotn .goViewWrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bnrCotn .goViewWrap a {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #444;
+    text-decoration: underline;
+}
+
+.bnrCotn .goViewWrap a+a {
+    margin-top: 8px;
+}
+
+.bnrCotn .goViewWrap a {
+    width: 100%;
+    height: 100%;
+    padding: 150px 0 0 24px;
+    box-sizing: border-box;
+}
+
+.bnrCotn.csCotn .goViewWrap {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    width: auto;
+    height: auto;
+}
+
+.bnrCotn.csCotn .goViewWrap a {
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+/* 하단링크 */
+.LinkWrap ul {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.LinkWrap .linkLi {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LinkWrap .linkLi+.linkLi:after {
+    display: block;
+    content: '';
+    height: 16px;
+    width: 1px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 0;
+    background-color: #D7D7D7;
+}
+
+.LinkWrap .linkMenu {
+    display: block;
+    margin-left: 16px;
+    font-size: 18px;
+    text-align: center;
+    color: #222;
+    line-height: 26px;
+    letter-spacing: -0.004em;
+}
+
+/* 채팅상담버튼 */
+.chatWrap {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    padding: 16px 10px;
+    z-index: 10;
+    height: 110px;
+    width: 68px;
+    box-sizing: border-box;
+    background: #eee;
+    border-radius: 40px;
+}
+
+.chatWrap span {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: -0.004em;
+    display: block;
+    text-align: center;
+}
+
+/* 스크롤 플러그인 */
+.mCSB_scrollTools {
+    right: -7px;
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #aaa;
+}
+
+.mCustomScrollbar {
+    touch-action: auto
+}
+
+/* 안내문구 */
+.notiWrap {
+    display: none;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.notiWrap .notiTxt {
+    font-size: 11px;
+    color: #888;
+    height: 16px;
+    line-height: 16px;
+    padding: 1px 0 0 24px;
+    position: relative;
+}
+
+.notiWrap .notiTxt:after {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon_noti_16x16.png) no-repeat;
+    background-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:100px) {
+    #start {
+        min-width: 140px !important;
+    }
+
+    .dirBnrBtn {
+        display: none;
+    }
+}
+
+/* *********************************************************************************************************************************************************************************************
+														[ 레이어팝업 ]
+********************************************************************************************************************************************************************************************* */
+
+/* setting */
+.b-modal {
+    display: none !important;
+}
+
+.layerPopWrap {
+    position: absolute;
+    left: 200px;
+    top: 44px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #666;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    width: 420px;
+    height: 440px;
+    z-index: 10;
+}
+.layerPopWrap .aaa {
+    position: absolute;
+    left: 200px;
+    top: 44px;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #666;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    width: 420px;
+    height: 440px;
+    z-index: 10;
+}
+
+.layerPopContainer .layerPopTit {
+    padding: 32px 24px 0 32px;
+    position: relative;
+}
+
+.layerPopContainer .layerPopTit .popTit {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+
+.layerPopContainer .closed {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: url(../images/icon_close_32x32.png) no-repeat;
+    background-size: 32px;
+}
+
+.layerPopBtm {
+    padding-bottom: 16px;
+}
+
+.layerPopBtm .btnWrap {
+    justify-content: center;
+}
+
+.layerPopBtm .btnWrap .btnRes {
+    width: 160px;
+    height: 44px;
+    line-height: 44px;
+    flex: none;
+    margin-left: 0;
+}
+
+.carWrap .layerPopWrap {
+    top: -293px;
+}
+
+/* 지점/차량선택 */
+.selectWrap {
+    padding: 24px 8px 0 0px;
+    height: 263px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectWrap .scrollWrap {
+    height: 263px;
+}
+
+.selectWrap .selectDepth1 {
+    width: 115px;
+    height: 100%;
+    border-right: 1px solid #eee;
+}
+
+.selectWrap .selectDepth1 li {
+    height: 18px;
+}
+
+.selectWrap .selectDepth1 li+li {
+    margin-top: 24px;
+}
+
+.selectWrap .selectDepth1 li:last-of-type {
+    height: auto;
+}
+
+.selectWrap .selectDepth1 label {
+    width: 100%;
+    text-align: center;
+}
+
+.selectWrap .selectDepth1 .tabBtn {
+    display: inline-block;
+    color: #222;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+}
+
+.selectWrap .selectDepth1 .tabBtn strong {
+    color: #666;
+    font-size: 13px;
+    letter-spacing: -0.04em;
+}
+
+.selectWrap .selectDepth1 input:checked~.tabBtn strong {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.selectWrap .selectDepth1 input:checked~.tabBtn {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.selectWrap .selectDepth2 input:checked~.tabBtn {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.selectWrap .selectDepth2 {
+    flex: 1;
+    height: 100%;
+}
+
+.selectWrap .selectDepth2 li:not(:last-of-type) {
+    margin-bottom: 24px;
+}
+
+.selectWrap .selectDepth2 label {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 35px;
+}
+
+.selectWrap .selectDepth2 span {
+    display: inline-block;
+    color: #222;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.selectWrap .selectDepth2 input:disabled~.rentName {
+    color: #aaa;
+}
+
+.selectWrap .selectDepth2 input:checked~.rentName,
+.selectWrap .selectDepth2 input:checked~.rentName strong {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.selectWrap .selectDepth2 .dataNone {
+    padding-left: 40px;
+}
+
+.selectWrap .selectDepth2 .dataNone p {
+    color: #222;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* 대여/반납일시선택 */
+.layerPopWrap.datePopup {
+    width: 640px;
+    min-height: 498px;
+    height: auto;
+}
+
+.selPeriodWrap {
+    margin-top: 24px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+}
+
+/* 달력 */
+.calendarWrap {
+    margin-right: 20px;
+    width: 255px;
+    box-sizing: border-box;
+}
+
+
+/* 시간선택 */
+.selTimeWrap {
+    margin-left: 20px;
+    flex: 1;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.selTimeWrap:After {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #eee;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+.selTimeWrap .selectArea {
+    width: 100%;
+}
+
+.selTimeWrap .selectArea+.selectArea {
+    margin-top: 24px;
+}
+
+.selTimeWrap .open~.selectArea.returnBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.layerPopContent .rentSelectBox {
+    padding-right: 48px;
+    margin-top: 0;
+    background: url(../images/icon_arrow_24x24.png) no-repeat right 16px center;
+    background-size: 24px;
+}
+
+.layerPopContent .open .rentSelectBox {
+    border: 1px solid #63a1ff;
+    background: url(../images/icon_arrow_on_24x24.png) no-repeat right 16px center;
+    background-size: 24px;
+}
+
+.layerPopContent .rentSelectBox .rentBox .tit,
+.layerPopContent .rentSelectBox .rentBox .selArea .txt {
+    color: #aaa;
+}
+
+.layerPopContent .open .rentSelectBox .rentBox .tit,
+.layerPopContent .open .rentSelectBox .rentBox .selArea .txt {
+    color: #222;
+}
+
+.layerPopContent .open .selectTimeWrap {
+    height: 100%;
+    padding-top: 10px;
+}
+
+.timeSelectBox {
+    position: relative;
+}
+
+.layerPopContent .open .rentSelectBox .rentBox .selArea .txt {
+    color: #666;
+}
+
+/* datepicker */
+.ui-datepicker-title {
+    color: #222;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.ui-datepicker-header .ui-datepicker-prev,
+.ui-datepicker-header .ui-datepicker-next {
+    height: 24px;
+    top: 0;
+}
+
+.ui-datepicker-header .ui-datepicker-prev {
+    left: 27px;
+}
+
+.ui-datepicker-header .ui-datepicker-next {
+    left: 207px;
+}
+
+.ui-datepicker-prev span {
+    width: 24px;
+    height: 24px;
+    background: url(/resources/images/icon_arrow_left_24x24.png) no-repeat center;
+    background-size: 24px;
+}
+
+.ui-datepicker-next span {
+    width: 24px;
+    height: 24px;
+    background: url(/resources/images/icon_arrow_right_24x24.png) no-repeat center;
+    background-size: 24px;
+}
+
+table.ui-datepicker-calendar {
+    padding-top: 24px;
+    overflow: hidden;
+}
+
+.ui-datepicker-calendar thead th span {
+    padding: 0 0 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.ui-datepicker-calendar td {
+    height: 32px;
+    /* width:32px; */
+    /* padding: 1px; */
+    box-sizing: border-box;
+}
+
+.ui-state-default {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    color: #222;
+    font-family: inherit;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    color: #bbb;
+}
+
+.ui-datepicker-calendar thead th.ui-datepicker-week-end span,
+.ui-datepicker-week-end a.ui-state-default {
+    color: #e85454;
+}
+
+.ui-datepicker-calendar thead th.ui-datepicker-week-end1 span,
+.ui-datepicker-week-end1 a.ui-state-default  {
+    color: #63a1ff;
+}
+
+.ui-datepicker-today .ui-state-default {
+    background-color: #fff;
+    color: #222;
+}
+
+.ui-state-highlight .ui-state-default {
+    position: relative;
+    background-color: #FFF7F0;
+    color: inherit;
+}
+
+table.ui-datepicker-calendar tr td.ui-state-highlight-start a,
+table.ui-datepicker-calendar tr td.ui-state-highlight-end a,
+.ui-state-default.ui-state-active {
+    background-color: #FF7A00;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    color: #fff !important;
+    font-weight: bold;
+}
+
+td.ui-datepicker-today:after {
+    display: none;
+}
+
+.inlandOn .ui-datepicker-today .ui-state-default {
+    color: #bbb;
+    cursor: text;
+}
+
+.startDay .ui-state-default{
+    border-radius: 50%;
+    background-color: #807aec;
+    color: #fff !important;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+}
+
+.endDay .ui-state-default {
+    border-radius: 50%;
+    background-color: #0b0199;
+    color: #fff !important;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+}
+
+.daySelect {
+    position: relative;
+}
+
+.daySelect {
+    background-color: #FFDBBB;
+}
+
+.daySelect:after {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 34px;
+    background-color: #FFDBBB;
+    position: absolute;
+    left: -50%;
+    top: 0px;
+    z-index: -1;
+}
+
+.daySelect:before {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 34px;
+    background-color: #FFDBBB;
+    position: absolute;
+    right: -50%;
+    top: 0px;
+    z-index: -1;
+}
+
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:first-child.daySelect:after,
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:last-child.daySelect:before {
+    display: none;
+}
+
+.daySelect .ui-state-default {
+    color: #222;
+}
+
+.ui-datepicker-current-day.endDay {
+    position: relative;
+}
+
+.ui-datepicker-current-day.endDay:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 32px;
+    background-color: #FFDBBB;
+    position: absolute;
+    left: -50%;
+    top: 0px;
+    z-index: -1;
+}
+
+/* 시간선택영역 */
+.selectTimeWrap {
+    height: 0;
+    overflow: hidden;
+}
+
+.dwi {
+    position: relative;
+    right: 60%;
+    transform: translate(30%);
+    font-family: inherit;
+}
+
+.android-ics .dwwo,
+.android-ics .dw {
+    background: none;
+}
+
+.android-ics .dw .dwwb {
+    background: none;
+}
+
+.dwww {
+    padding: 0;
+}
+
+.android-ics .dww .dw-li {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.android-ics .dww .dw-li .dw-i {
+    font-weight: bold;
+}
+
+.android-ics .dww .dw-li.dw-sel {
+    color: #222 !important;
+}
+
+.android-ics .dww .dw-li.dw-v {
+    color: #eee;
+}
+
+.android-ics .dw .dwwol {
+    display: none;
+}
+
+.android-ics .dwwb:after {
+    display: none;
+}
+
+.android-ics .dw .dwwb.dwwbm {
+    background: transparent url(../images/icon_arrow_up_16x16.png) no-repeat top center;
+    background-size: 70px 36px;
+    height: 72px !important;
+}
+
+.android-ics .dw .dwwb.dwwbp {
+    background: transparent url(../images/icon_arrow_down_16x16.png) no-repeat bottom center;
+    background-size: 70px 36px;
+    height: 72px !important;
+}
+
+.dwwc.dwrc td+td {
+    position: relative;
+}
+
+.dwwc.dwrc td+td:After {
+    display: block;
+    content: ':';
+    font-size: 18px;
+    line-height: 21px;
+    color: #222;
+    position: absolute;
+    left: -2px;
+    top: 45%;
+}
+
+/* 공지사항 팝업 */
+.notiPopupWrap {
+    width: 640px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.notiPopupWrap .titArea {
+    padding: 19px 24px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notiPopupWrap .titArea .popTit {
+    font-size: 18px;
+    line-height: 21px;
+    color: #222;
+    font-weight: bold;
+}
+
+.notiPopupWrap .titArea .popupClose {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/icon_close_32x32.png) no-repeat;
+    background-size: 32px;
+}
+
+.notiPopupWrap .popupContArea {
+    padding: 32px 0 40px;
+}
+
+.notiPopupWrap .popupContArea p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+}
+
+.notiPopupWrap .popupContArea p+p {
+    margin-top: 24px;
+}
+
+.notiPopupWrap .popupContArea p.contTit {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 0;
+}
+
+.notiPopupWrap .popupContArea strong {
+    font-weight: bold;
+}
+
+.notiPopupWrap .chkArea {
+    background-color: #aaa;
+    padding: 12px 24px;
+    text-align: right;
+}
+
+.notiPopupWrap .chkArea .txt {
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input_chk .form_chk input[type=checkbox] {
+    width: 20px !important;
+    height: 20px !important;
+    opacity: 1;
+    position: relative;
+    margin-right: 0 !important;
+    cursor: pointer;
+}
+
+.sel_disabled label {
+    cursor: default;
+}

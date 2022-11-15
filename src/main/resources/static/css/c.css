@@ -1,0 +1,278 @@
+.contentWrap .cont {
+    width: 500px;
+    height: 572px;
+}
+
+.icon_sel_arrow {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background: url('/resources/images/icon_arrow_24x24.png') no-repeat;
+    background-size: 24px;
+}
+
+.logo {
+    display: inline-block;
+    width: 172px;
+    height: 50px;
+    background: url(/resources/images/logo.png) no-repeat 0 center/90%;
+    transition: background-image 500ms;
+    margin: 0 0 0 11px
+}
+
+.mVbg {
+    background: url(/resources/images/bg_main_visual.png) no-repeat center/cover;
+    width: 143%;
+    min-width: 2500px;
+    height: 283%;
+    min-height: 2500px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: mVbgRotate 360s infinite linear;
+}
+
+.dw-ul {
+    scroll-behavior: smooth;
+}
+
+#sub_title.type02>.sub_visual {
+    height: 250px;
+}
+
+#sub_title.type02>.sub_visual {
+    height: 380px;
+    background: linear-gradient(to bottom, #13172d 30%, #25425b);
+}
+
+#sub_title>.sub_visual {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background: url(../img/contents/bg_subvisual.png) no-repeat center/cover;
+}
+
+#sub_title>.sub_visual .sub_visualIn {
+    position: relative;
+    z-index: 1;
+    max-width: 1370px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sub_title>.sub_visual .cont {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.sub_visualIn .ico_diagram {
+    transform: scale(0.6);
+    right: -45px;
+}
+
+.sub_visualIn .ico_diagram {
+    position: absolute;
+    top: -45%;
+    right: 0;
+}
+
+.sub_visualIn .ico_diagram>div {
+    position: relative;
+    width: 257px;
+    height: 159px;
+}
+
+.sub_visualIn .ico_diagram .oval {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 5px solid;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0px #829eba, inset 0 0 20px 0px #3b5d78;
+}
+
+.sub_visualIn .ico_diagram .oval:nth-of-type(1) {
+    top: 84px;
+    border-color: #8fafbe;
+}
+
+.sub_visualIn .ico_diagram .oval:nth-of-type(2) {
+    top: 55px;
+    left: 112px;
+    border-color: #96a7c2;
+}
+
+.sub_visualIn .ico_diagram .oval:nth-of-type(3) {
+    bottom: 0;
+    right: 36px;
+    border-color: #9ca3ca;
+}
+
+.sub_visualIn .ico_diagram .oval:nth-of-type(4) {
+    right: 0;
+    border-color: #9d9bc6;
+}
+
+.sub_visualIn .ico_diagram .line:nth-of-type(6) {
+    top: 33px;
+    left: 66px;
+    height: 95px;
+    border-color: #94aac1;
+    transform: rotate(75deg);
+}
+
+.sub_visualIn .ico_diagram .line {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    border: 1px dashed;
+    box-sizing: border-box;
+}
+
+.sub_visualIn .ico_diagram .line:nth-of-type(7) {
+    top: 58px;
+    left: 165px;
+    height: 100px;
+    border-color: #9cacca;
+    transform: rotate(135deg);
+}
+
+
+.sub_visualIn .ico_diagram .line:nth-of-type(8) {
+    bottom: 20px;
+    right: 28px;
+    height: 121px;
+    border-color: #9c9bc6;
+    transform: rotate(15deg);
+}
+
+#sub_title>.sub_visual .cont>h3 {
+    font-size: 7.9vw;
+}
+
+#sub_title.type02>.sub_visual h3 {
+    text-align: center;
+}
+
+#sub_title>.sub_visual .cont>h3 {
+    font-size: 58px;
+    font-weight: 800;
+}
+
+#sub_cont {
+    padding-top: 55px;
+}
+
+#sub_cont {
+    padding-top: 80px;
+}
+
+#sub_cont {
+    padding-top: 70px;
+}
+
+#sub_cont .sSolWrap {
+    max-width: 1568px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.who,
+#sub_cont .sSolWrap .sSol_contWrap .sSol_box .sSol_cont .sSol_ex,
+#sub_cont .sSolWrap .sSol_contWrap .sSol_box .sSol_cont .sSol_char .sSol_charRow,
+#sub_cont .sSolWrap .sSol_contWrap .sSol_box,
+#sub_cont .sSolWrap .sSol_contWrap,
+#sub_cont .sSolWrap .sSol_top .sSol_topBox,
+#sub_cont .sSolWrap,
+#sub_cont .s7Wrap .s7_row,
+#sub_cont .s7Wrap,
+#sub_cont .s2_cWrap,
+#sub_cont .blueBox .s2_contWrap,
+#sub_cont .blueBox .s6_contWrap,
+#sub_cont .blueBox,
+#sub_cont .sBusiness_wrap .sBusiness_box,
+#sub_cont .sBusiness_wrap,
+#sub_cont .s1_circleWrap .s1_cWrap,
+#sub_cont .wp1180,
+#sub_cont .wp1150,
+#sub_cont .wp1410 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#sub_title>.sub_navi {
+    width: 100%;
+    height: 65px;
+    background-color: #3754d1;
+    color: #fff;
+}
+
+#sub_title>.sub_navi.sub_navi_sol ul {
+    width: 65%;
+    margin: 0 auto;
+}
+
+#sub_title>.sub_navi.sub_navi_sol li {
+    width: 25%;
+    margin-left: -1px;
+}
+
+#sub_title>.sub_navi li {
+    float: left;
+    width: 14.2857142857%;
+    margin-left: -1px;
+    text-align: center;
+}
+
+#sub_title>.sub_navi li>a {
+    font-size: 16px;
+}
+
+#sub_title>.sub_navi li>a {
+    display: inline-block;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 65px;
+    white-space: nowrap;
+}
+
+#sub_cont .sSolWrap .sSol_top .sSol_topTle {
+    font-size: 32px;
+}
+
+#sub_cont .sSolWrap .sSol_top .sSol_topTle {
+    font-size: 44.5px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#sub_cont .sSolWrap .sSol_top .sSol_topBox {
+    border: 1px solid #ddd;
+    padding: 65px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.aaa th {
+    text-align: center;
+}
+
+.aaa td {
+    text-align: center;
+}
